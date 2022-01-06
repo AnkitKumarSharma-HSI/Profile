@@ -1,18 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesheet/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+  <head>
+    <meta
+      name="description"
+      content="Hello Everyone This is my personal website or you can say my personal portfolio I have created this for the purpose of the resume."
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheet/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Quicksand:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.0/css/ionicons.min.css"
+    />
     <title>myprofile</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <p>This is Ankit Kumar Sharma</p>
+      <header>
+        <span class="barContainer">
+          <ion-icon
+            name="reorder-three-outline"
+            class="icon"
+            id="bars"
+            onclick="mySideBar()"
+          ></ion-icon
+        ></span>
+      </header>
+      <section>
+        <div class="sideBar">
+          <section class="myPicture"></section>
+          <section class="designation">
+            <p style="font-size: 22px" class="jobRole">UI Developer</p>
+            <p>India</p>
+          </section>
+          <nav class="navBar">
+            <ul>
+              <li style="margin-top: 0px">
+                <a href="#"
+                  ><ion-icon name="home-outline" class="navIcon"></ion-icon
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><ion-icon
+                    name="information-circle-outline"
+                    class="navIcon"
+                  ></ion-icon
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><ion-icon
+                    name="hand-right-outline"
+                    class="navIcon"
+                  ></ion-icon
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><ion-icon name="school-outline" class="navIcon"></ion-icon
+                  >Education</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><ion-icon name="analytics-outline" class="navIcon"></ion-icon
+                  >Experience</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><ion-icon name="call-outline" class="navIcon"></ion-icon
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <button class="hire">Hire</button>
+          <section class="socialLinks">
+            <a href="#">
+              <ion-icon name="logo-github" class="socialIcon"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-linkedin" class="socialIcon"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-whatsapp" class="socialIcon"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-facebook" class="socialIcon"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-stackoverflow" class="socialIcon"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-twitter" class="socialIcon"></ion-icon>
+            </a>
+          </section>
+        </div>
+        <div class="contentContainer">
+          <article>
+            <p>Hello I'm</p>
+            <p>
+              <span class="myName">Ankit Kumar Sharma</span>
+            </p>
+            <button class="viewWorkButton">View Work</button>
+          </article>
+        </div>
+      </section>
     </main>
-</body>
+    <script src="./JavaScript/myJs.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
