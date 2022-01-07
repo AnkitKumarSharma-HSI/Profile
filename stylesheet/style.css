@@ -4,6 +4,11 @@
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
 }
+::selection
+{
+  color: white;
+  background-color: #800000;
+}
 :root {
   scroll-behavior: smooth;
   scroll-padding-top: 120px;
@@ -382,7 +387,7 @@ nav ul li:hover ::before
   margin-top: 45px;
   width: 200px;
   height: 300px;
-  border: 2px solid #800000;
+  border: 2px solid #a8a8a8;
 }
 .skillBox1,.skillBox2
 {
