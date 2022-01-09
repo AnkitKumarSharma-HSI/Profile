@@ -262,15 +262,22 @@ nav ul li:hover ::before
   font-size: 25px;
   color: white;
 }
+
 .titleContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 32px;
   color: #800000;
-  width: 100%;
+  margin: auto;
+  width: 50%;
   height: 70px;
   /* border: 1px solid green; */
+}
+
+.titleContainer p
+{
+  margin-left: 5px;
 }
 .about,
 .skill,
@@ -280,6 +287,39 @@ nav ul li:hover ::before
   width: 100%;
   height: 520px;
   /* border: 1px solid green; */
+}
+.education
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid green; */
+}
+.eduBox1
+{
+  /* padding-left: 200px; */
+  padding-top: 10px;
+  height: 520px;
+  width: 50%;
+  background-image: linear-gradient(to left bottom,white 90%,#800000 10%);
+
+  /* border: 1px solid black; */
+}
+.lang
+{
+text-align: center;
+  /* margin: auto; */
+  margin-top: 30px;
+  font-size: 20px;
+  color: #800000;
+  font-weight: 600;
+}
+
+.eduBox2
+{
+  width: 50%;
+  height: 500px;
+  border-left: 1px solid #a8a8a8;
 }
 .skill
 {
@@ -402,10 +442,97 @@ nav ul li:hover ::before
   background-repeat: no-repeat;
   background-size: 50%;
 }
+.ratingContainer
+{
+  margin: 5px 0px 5px 0px;
+  width: 51%;
+  height: 20px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.titleNameIcon
+{
+  
+  color: #a8a8a8;
+  font-size: 45px;
+}
+.titleName
+{
+  font-size: 30px;
+  /* border: 1px solid blue; */
+  position: relative;
+  font-weight: 500;
+}
+/* .titleName::before
+{
+  position: absolute;
+  content: '';
+  background-color: #800000;
+  width: 40px;
+  height: 2px;
+  left: -0px;
+} */
+.star
+{
+  border-radius: 2px;
+  width: 17%;
+  height: 2px;
+  /* border: 1px solid #800000; */
+  background-color: #800000;
+}
+.e3,.e2,.e1
+{
+  /* color: #800000; */
+  padding-left: 40px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 40px;
+  /* font-weight: 500; */
+  width: 100%;
+  height: 100px;
+  /* line-height: 40px; */
+  /* border: 1px solid black; */
+}
+.degree
+{
+  font-weight: 600;
+  font-size: 19px;
+  color: #800000;
+}
+.e3,.e2,.e1
+{
+  position: relative;
+}
+
+.e1::before,.e2::before,.e3::before
+{
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  content: '';
+  height: 13px;
+  width: 13px;
+  left: -13px;
+  border: 6px solid white;
+  background-color: #800000;
+  border-radius: 100%;
+}
+.skillName
+{
+  margin-top: 10px;
+  font-weight: 600;
+  color: #800000;
+  /* border: 1px solid red; */
+  font-size: 18px;
+}
 .skillBox2
 {
-  padding-left: 20px;
-  /* border-left: 1px dottedjob #a8a8a8; */
+  /* border: 1px solid black; */
+  padding-left: 0px;
+  /* border-left: 1px dotted #a8a8a8; */
   background-image: linear-gradient(to right bottom,white 90%,#800000 10%);
 }
 
@@ -427,13 +554,14 @@ nav ul li:hover ::before
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-top: 130px;
+  margin-top: 50px;
 }
 .skillBtnContainer a
 {
   position: relative;
   z-index: 1;
   text-decoration: none;
+  font-weight: 500;
   font-size: 20px;
   color: #800000;
   background-color: white;
