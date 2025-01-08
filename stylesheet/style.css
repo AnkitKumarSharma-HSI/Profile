@@ -305,11 +305,14 @@ nav ul li:hover ::before {
   width: 60%;
   /* border-radius: 30px; */
   height: 63px;
-  margin-top: 200px;
+  margin-top: 50px;
   margin-bottom: 20px;
   border-bottom: 2px solid #a8a8a8;
+  /* background-image: linear-gradient(to right bottom, white 77%, #800000 10%); */
   /* background-color: #f7eded; */
   /* border-bottom: 1px solid #bfbfbf; */
+  /* border: 1px solid green; */
+  /* border-radius: 0px 50px 0px 0px; */
 }
 b.bold,b,.bold{
   font-weight: 600;
@@ -325,8 +328,12 @@ b.bold,b,.bold{
 .experience,
 .recommendations {
   width: 100%;
-  height: 520px;
+  min-height: 520px;
+  height: auto;
   /* border: 1px solid green; */
+}
+.education,.skill{
+  height: 700px;
 }
 .experience {
   position: relative;
@@ -356,7 +363,7 @@ b.bold,b,.bold{
   padding-top: 10px;
   height: 520px;
   width: 50%;
-  background-image: linear-gradient(to left bottom, white 90%, #800000 10%);
+  background-image: linear-gradient(to right bottom, white 57%, #800000 10%);
   /* border: 1px solid black; */
 }
 .lang {
@@ -526,7 +533,7 @@ p.pIcon{
 }
 .skillBox1 {
   background: url(../Images/interviewBack.svg);
-  background-position: left bottom;
+  background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 50%;
 }
@@ -606,7 +613,15 @@ p.pIcon{
 .skillBox2 {
   /* border: 1px solid black; */
   padding-left: 0px;
-  background-image: linear-gradient(to right bottom, white 90%, #800000 10%);
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* border: 1px solid #a8a8a8; */
+  padding: 0px;
+  border-radius: 0px;
+  background-image: linear-gradient(to right top, white 90%, #800000 50%);
 }
 
 .triangleContainer {
